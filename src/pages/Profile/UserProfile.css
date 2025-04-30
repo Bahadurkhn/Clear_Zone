@@ -1,0 +1,170 @@
+/* User Profile Container */
+
+.user-profile-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+
+}
+
+/* Title and Subtitle */
+.profile-title {
+  color: #137c49;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.profile-subtitle {
+  color: #606060;
+  margin-bottom: 30px;
+}
+
+/* Profile and Achievements Cards */
+.profile-card, .achievements-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.profile-card h3, .achievements-card h3 {
+  color: #137c49;
+  margin-bottom: 15px;
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+  background-color: #00a651;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Edit Fields */
+.edit-fields input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Information Fields */
+.info-fields p {
+  margin: 8px 0;
+}
+
+/* Reporting Stats */
+.reporting-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.stat-box {
+  background: #e7f8ec;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-label {
+  color: #606060;
+  margin-top: 5px;
+}
+
+/* Social Buttons - Remove underline and add hover effects */
+.social-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.facebook-btn, .twitter-btn, .linkedin-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;  /* Remove underline */
+  transition: background 0.3s ease;
+}
+
+.facebook-btn {
+  background-color: #1877f2;
+}
+
+.twitter-btn {
+  background-color: #1da1f2;
+}
+
+.linkedin-btn {
+  background-color: #e60023;
+  text-decoration: none;
+  
+}
+
+.facebook-btn:hover, .twitter-btn:hover, .linkedin-btn:hover {
+  background-color: #2a66c5; /* darken on hover */
+}
+
+/* Profile Image Section */
+.profile-image-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-image-wrapper {
+  position: relative;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00a651;
+}
+
+/* Camera Icon - Remove background circle */
+.camera-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: transparent; /* Removed the background */
+  color: #00a651;         /* Green color for the icon */
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid #00a651; /* Optional border around the camera */
+}
+
+/* Input for Camera Icon */
+.camera-icon input {
+  display: none;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  font-size: 24px;
+  padding: 100px;
+}

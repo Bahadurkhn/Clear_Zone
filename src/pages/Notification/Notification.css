@@ -1,0 +1,149 @@
+.notification-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  
+}
+
+.notification-page h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  
+}
+
+.no-notifications {
+  text-align: center;
+  
+  color: #7f8c8d;
+  padding: 40px 0;
+  font-size: 1rem;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+}
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.notification-item.unread {
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+}
+
+.notification-item.read {
+  background-color: #f0f0f0;
+  border-left: 4px solid #95a5a6;
+}
+
+.notification-item:hover {
+  background-color: #eaf2f8;
+  transform: translateY(-1px);
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-content p {
+  margin: 0 0 6px;
+  color: #2c3e50;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.notification-content small {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  display: block;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: 15px;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #c0392b;
+}
+
+/* Demo button – remove in production */
+.demo-btn {
+  display: inline-block;
+  margin: 30px auto 0;
+  padding: 20px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.demo-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 600px) {
+  .notification-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  .notification-content p {
+    font-size: 0.95rem;
+  }
+
+  .notification-content small {
+    font-size: 0.8rem;
+  }
+
+  .close-btn {
+    align-self: flex-end;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .notification-page {
+    padding: 15px;
+  }
+
+  .notification-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .notification-item {
+    padding: 10px 14px;
+  }
+
+  .demo-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

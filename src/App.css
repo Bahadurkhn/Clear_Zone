@@ -1,0 +1,93 @@
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main Layout Structure */
+.app-body {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+  min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 280px;
+  position: fixed;
+  height: 100vh;
+  z-index: 100;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+}
+
+/* Desktop Styles */
+@media (min-width: 993px) {
+  .sidebar {
+    position: relative;
+    transform: translateX(0);
+    height: auto;
+  }
+  
+  .content {
+    margin-left: 280px;
+  }
+  
+  .mobile-sidebar-toggle {
+    display: none !important;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+  .sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+  
+  .sidebar-open .content {
+    margin-left: 0;
+  }
+}
+
+/* Footer Styles */
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Loading Screen (optional) */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure proper spacing */
+.navbar {
+  z-index: 101; /* Above sidebar */
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

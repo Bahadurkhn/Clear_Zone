@@ -1,0 +1,102 @@
+/* ReportWaste.css */
+
+body {
+  background: url('/assets/images/bg-clean.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.report-waste-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: #007e33;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.waste-form label {
+  display: block;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.waste-form select,
+.waste-form input[type="text"],
+.waste-form input[type="file"],
+.waste-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.waste-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.map-view {
+  margin: 20px 0;
+}
+
+.map-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.map-buttons button {
+  flex: 1;
+  padding: 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.map-buttons .active {
+  background-color: #007e33;
+  color: #fff;
+}
+
+.map-buttons button:hover:not(.active) {
+  background-color: #cccccc;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00a344;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #007e33;
+}
