@@ -24,7 +24,7 @@ const NGOProfile = () => {
 
   const handlePasswordSubmit = (e) => {
     e.preventDefault();
-    if (passwordInput === "ngopass123") {
+    if (passwordInput === "ngopass") {
       setIsEditing(true); // allow editing
       setAuthError("");
       setPasswordInput("");
